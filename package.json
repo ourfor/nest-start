@@ -52,6 +52,11 @@
       "ts"
     ],
     "rootDir": "src",
+    "moduleNameMapper": {
+      "@service/(.*)$": "<rootDir>/service/$1",
+      "@controller/(.*)$": "<rootDir>/controller/$1",
+      "@module/(.*)$": "<rootDir>/module/$1"
+    },
     "testRegex": ".spec.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"

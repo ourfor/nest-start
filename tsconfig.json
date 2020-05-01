@@ -9,7 +9,25 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@service": ["src/service"],
+      "@service/*": ["src/service/*"],
+      "@controller": ["src/controller"],
+      "@controller/*": ["src/controller/*"],
+      "@module": ["src/module"],
+      "@module/*": ["src/module/*"],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
+      "@resource": ["src/resource"],
+      "@resource/*": ["src/resource/*"],
+      "@tools/*": ["src/tools/*"],
+      "@tools": ["src/tools"],
+      "@repo": ["src/repo"],
+      "@repo/*": ["src/repo/*"],
+      "@src/*": ["src/*"],
+      "@http": ["node_modules/@types/express"]
+    }
   },
   "exclude": ["node_modules", "dist"]
 }
